@@ -1,0 +1,16 @@
+Published the website to oamk: https://www.students.oamk.fi/~n2nyve00/Webtekniikka.Nyman/
+
+
+Bootstrap comments: Directly from code: <!--Adds a button in the form of a"hamburger that opens a hidden portion of the nav that contains links""--> (Html)
+//Hides and reveals the with this(Js)
+/*#hide and #navi help reveal and hide the links*/
+
+UI Suunnitelma comments:/*Made the images disappear when page reaches 768px width and 600px width to make the website more responsive.*/
+
+Advanced css comments: /*Made a variable with sass in the form a color $PrimaryBtn.*/
+/*Made a Mixin with sass to center everything in the middle.*/
+/*Used + selector to color my own name on page3.html.*/
+/*Used ~ selector to color my own name on index.html.*/
+/*Used [] selector to remove text decoration on link.*/
+/*used a pseudo selector of :hover in the nav to make the website look better in the viewers eyes.*/
+/*Used > selector to make the stage image to disappear on 600px to make the page more responsive.*/
