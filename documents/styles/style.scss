@@ -1,7 +1,21 @@
+/*Made a variable with sass in the form a color $PrimaryBtn.*/
+/*Made a Mixin with sass to center everything in the middle.*/
+/*Used + selector to color my own name on page3.html.*/
+/*Used ~ selector to color my own name on index.html.*/
+/*Used [] selector to remove text decoration on link.*/
+/*used a pseudo selector of :hover in the nav to make the website look better in the viewers eyes.*/
+/*Used > selector to make the stage image to disappear on 600px to make the page more responsive.*/
+/*Made the images disappear when page reaches 768px width and 600px width to make the website more responsive.*/
+@mixin Center{
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+}
+$PrimaryBtn:#1b9bff;
 #hamburger{
     padding: 10px;
-    background: white;
-    border: 3px solid black;
+    background: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 5px;
     position: absolute;
     right: 20px;
@@ -15,7 +29,6 @@
 }
 #navi{
     position: relative;
-    
 }
 #smaller{
     size: 200px;
@@ -33,7 +46,7 @@ nav{
     width: 100%;
 }
 label.logo{
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 35px;
     line-height: 80px;
     padding: 0 100px;
@@ -42,14 +55,11 @@ label.logo{
 label.logo a{
     text-decoration: none;
     text-transform: none;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: none;
 }
-label.logo a .hover{
-    display: none;
-}
 nav ul{
-    background-color: #1b9bff;
+    background-color: $PrimaryBtn;
     justify-content: right;
 }
 nav ul li{
@@ -58,20 +68,20 @@ nav ul li{
     margin: 0 5px;
 }
 nav ul li a{
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
-    border: black;
+    border: rgb(0, 0, 0);
 }
 a.active,a:hover{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     transition: .5s;
 }
 .checkbtn{
     font-size: 30px;
-    color: white;
+    color: rgb(255, 255, 255);
     float: right;
     line-height: 80px;
     margin-right: 80px;
@@ -82,16 +92,16 @@ a.active,a:hover{
     display: none;
 }
 .bootstrap1{
-    border:3px bold black;
+    @include Center();
+    border:3px bold rgb(0, 0, 0);
     width: 60%;
-    background-color: gray;
+    background-color: rgb(128, 128, 128);
     border-radius: 5px;
-    align-items: center;
-    justify-content: center;
+    
 }
 .grid{
+    @include Center();
     display: grid;
-    place-items: center;
     padding:5px;
 }
 .Txt{
@@ -123,15 +133,13 @@ a[href^="https"]{
 a[href^="www"]{
     text-decoration: none;
 }
-body ~ p{
-    text-align: center;
-}
 p#info ~ p{
-    color: #1b9bff;
+    color: $PrimaryBtn;
 }
 p.sibling+p{
-    color: #1b9bff;
+    color: $PrimaryBtn;
 }
+
 @media only screen and (max-width: 768px) {
 .band{
     display: none;

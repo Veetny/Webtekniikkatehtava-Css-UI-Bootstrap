@@ -1,0 +1,182 @@
+/*Made a variable with sass in the form a color $PrimaryBtn.*/
+/*Made a Mixin with sass to center everything in the middle.*/
+/*Used + selector to color my own name on page3.html.*/
+/*Used ~ selector to color my own name on index.html.*/
+/*Used [] selector to remove text decoration on link.*/
+/*used a pseudo selector of :hover in the nav to make the website look better in the viewers eyes.*/
+/*Used > selector to make the stage image to disappear on 600px to make the page more responsive.*/
+/*Made the images disappear when page reaches 768px width and 600px width to make the website more responsive.*/
+#hamburger {
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+#check {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+#navi {
+  position: relative;
+}
+
+#smaller {
+  size: 200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family:Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+
+nav {
+  background-color: rgb(0, 170, 255);
+  height: 80px;
+  width: 100%;
+}
+
+label.logo {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+label.logo a {
+  text-decoration: none;
+  text-transform: none;
+  color: rgb(255, 255, 255);
+  background-color: none;
+}
+
+nav ul {
+  background-color: #1b9bff;
+  justify-content: right;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  border: rgb(0, 0, 0);
+}
+
+a.active, a:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  float: right;
+  line-height: 80px;
+  margin-right: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.bootstrap1 {
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  border: 3px bold rgb(0, 0, 0);
+  width: 60%;
+  background-color: rgb(128, 128, 128);
+  border-radius: 5px;
+}
+
+.grid {
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  display: grid;
+  padding: 5px;
+}
+
+.Txt {
+  font-size: 3em;
+}
+
+p {
+  padding: 5px;
+}
+
+.img {
+  position: absolute;
+  top: 65%;
+}
+
+.band {
+  height: 225px;
+}
+
+.Album {
+  height: 150px;
+}
+
+.Stage {
+  height: 200px;
+}
+
+.grid > p {
+  font-size: 50px;
+}
+
+a[href^=https] {
+  text-decoration: none;
+}
+
+a[href^=www] {
+  text-decoration: none;
+}
+
+p#info ~ p {
+  color: #1b9bff;
+}
+
+p.sibling + p {
+  color: #1b9bff;
+}
+
+@media only screen and (max-width: 768px) {
+  .band {
+    display: none;
+  }
+  #info {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .bootstrap1 > .Stage {
+    display: none;
+  }
+  .bootstrap1 > .Album {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
